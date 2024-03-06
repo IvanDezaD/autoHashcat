@@ -111,7 +111,7 @@ writeHashCracked() {
 	local cracked=$2
 	local filename=$3
 	log $LOG "$cracked $filename $hash"
-	echo -e "$hash->$cracked" &>"$date$filename"
+	echo -e "$hash->$cracked" &>"$date.$filename"
 }
 
 main() {
